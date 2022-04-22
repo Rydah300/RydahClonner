@@ -8,8 +8,9 @@ try:
     import requests, os, sys, time, datetime, re, random, hashlib, threading, json, getpass, urllib, cookielib, requests, os, time, uuid, requests
     from multiprocessing.pool import ThreadPool
     os.system('clear')
-    os.system('termux-setup-storage')
-except ImportError:
+    os.system('termux-setup-storage') 
+try:   
+    except ImportError:
     print '\n [\xc3\x97] The requests module is not installed!...\n'
     os.system('pip2 install requests')
 
